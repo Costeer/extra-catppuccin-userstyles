@@ -268,6 +268,13 @@ nav .p-release {
 }
 
 @-moz-document url-prefix("https://zen-browser.app/mods/") {
+:root {
+  --zen-paper: #cdd6f4;
+  --zen-dark: #313244;
+  --zen-muted: rgba(0, 0, 0, .05);
+  --zen-subtle: rgba(0, 0, 0, .05);
+}
+	
 .text-dark {
     color: #cdd6f4;
 }
@@ -279,10 +286,23 @@ nav .p-release {
 .border-dark {
     border-color: #cdd6f4;
 }
+	
+.bg-dark {
+  background-color: #313244;
+}
 
 .text-paper {
-    color: #1e1e2e;
+    color: #cdd6f4;
 }
+	
+element {
+	background-color: #cba6f7 !important;
+}
+	
+.\!text-dark {
+  color: var(--zen-paper) !important;
+}
+	
 }
 
 @-moz-document url-prefix("https://app.todoist.com/app/") {
